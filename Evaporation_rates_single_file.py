@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov 29 13:00:53 2018
 
-@author: ms01106
 """
 
 import numpy as np
@@ -12,7 +10,7 @@ import os
 import datetime
 from scipy import stats
 
-data_dir='//surrey.ac.uk/Research/Malin_Schulz_PhDproject/Experimental/Evaporation rate/' #enter your data directory
+data_dir='//data/directory/' #enter your data directory
 #convert date and time to total running seconds
 def time_to_running_seconds(dates, times):
     datetimestrings = dates + " " + times
@@ -62,5 +60,5 @@ def get_Evaporationrate (filename, seperator=',', comment='#'):
     print("slope:", slope)
     print("Evaporationrate [cm/s]:", abs(slope)/4.84)#39.52cm^2 glass slides, 4cm^2 steel plates,  4.84cm^2 glass coverslip
     
-open_plot_and_save(data_dir+"LA_60_rH24_LinkamWarmstage_3.csv") #your filename
-get_Evaporationrate(data_dir+"LA_60_rH24_LinkamWarmstage_3_running_time_weight.csv")
+open_plot_and_save(data_dir+"name.csv") #your filename
+get_Evaporationrate(data_dir+"name.csv")
