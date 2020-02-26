@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 17 16:53:59 2019
 
-@author: ms01106
 """
 
 import numpy as np
@@ -16,8 +14,8 @@ import matplotlib.cm
 import re
 import scipy.constants as const
 
-data_dir='//surrey.ac.uk/Research/Malin_Schulz_PhDproject/Experimental/Evaporation rate/'
-files= sorted(glob.glob(data_dir+'*LinkamWarmstage_*.csv'))
+data_dir='//data/directory'
+files= sorted(glob.glob(data_dir+'name.csv'))
 
         
 #convert date and time to total running seconds
